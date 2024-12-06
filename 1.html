@@ -14,7 +14,31 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-color: #333; /* 暗色背景 */
+            color: white; /* 文字颜色为白色 */
         }
+        body * {
+            border: 1px solid rgba(165, 42, 42, 0.5); /* 棕色半透明边框 */
+            padding: 2px; /* 内边距，防止文字与边框紧贴 */
+        }
+
+        header, footer {
+            background-color: transparent; /* 透明背景 */
+            color: white;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: white; /* 标题颜色为白色 */
+        }
+
+        p, a, li, dd, dt {
+            color: white; /* 段落、列表项、定义列表和术语颜色为白色 */
+        }
+
+        mark, em, b, strong, ruby, sup, sub, abbr {
+            color: white; /* 特殊文本颜色为白色 */
+        }
+
         header {
             background-color: #333;
             color: white;
@@ -113,6 +137,7 @@
             <ul>
                 <li><a href="#bands">男团介绍</a></li>
                 <li><a href="#songs">歌曲推荐</a></ul>
+                <li><a href="#comments">粉丝评论</a></li>
             </ul>
         </nav>
     </header>
@@ -172,7 +197,14 @@
         <p>以下是NCT的<b>热门歌曲</b>：</p>
         <a href="#" class="song" onclick="playSong('https://i.y.qq.com/v8/playsong.html?songid=315284258#webchat_redirect')">《八音盒 (Life Is Still Going On) (오르골)》</a><br>
     </section>
-    
+    <section id="comments">
+        <h2>粉丝评论</h2>
+        <div class="comment">
+            <p>印象中以往大多数带有<mark>八音盒</mark>元素的歌都是走诡异怪诞风格的，<q>梦这首好阳光好清新</q>，<em>是听到就想吃</em>🍉🍉🍉的程度。</p>
+            <p>快进到八音盒<mark>荣获</mark>乐器组大赏一位，接受采访泣不成声：<q>感谢小梦带我转型，俺也可以很阳间！！</q><cite> —— 获奖感言</cite></p>
+        </div>
+        <!-- 更多评论 -->
+    </section>
     <footer>
         <p>版权所有 <sup>&copy;</sup> 2024 NCT粉丝聚集地</p>
     </footer>

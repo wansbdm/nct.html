@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>NCT粉丝聚集地</title>
+    <title>NCTdream粉丝聚集地</title>
     <style>
         body, html {
             font-family: Arial, sans-serif;
@@ -41,6 +41,15 @@
             background-color: #f9f9f9;
             border-left: 5px solid #ccc;
         }
+        .song {
+            margin: 10px 0;
+            cursor: pointer;
+            color: #0000ff; /* 设置文字颜色为蓝色 */
+            text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff; /* 添加两层白色发光效果 */
+        }
+        .song:hover {
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #0fa; /* 调整发光效果 */
+        }
         footer {
             background-color: #333;
             color: white;
@@ -52,6 +61,16 @@
         }
         mark {
             background-color: yellow;
+        }
+        .aurora-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('nctdream背景.jpg') no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1;
         }
         em {
             font-style: italic;
@@ -90,26 +109,53 @@
     <section id="bands">
         <h2>男团介绍</h2>
         <p>NCT是韩国<mark>SM</mark>娱乐有限公司于2016年起推出的韩国流行乐男子演唱组合，取<em>“Neo Culture Technology”</em>的首字母从而组成“NCT”</p>
-        <dl>
-            <dt>成员</dt>
-            <dd>成员A</dd>
-            <dd>成员B</dd>
-            <dd>成员C</dd>
-        </dl>
+    </section>
+    <section id="members">    
+        <h2>成员介绍</h2>
+        <div class="member">
+            <div class="member-name">罗哉民</div>
+            <img src="罗哉民.jpg" alt="罗哉民">
+        </div>
+        <div class="member">
+            <div class="member-name">黄仁俊</div>
+            <img src="黄仁俊.jpg" alt="黄仁俊">
+        </div>
+        <div class="member">
+            <div class="member-name">李马克</div>
+            <img src="李马克.jpg" alt="李马克">
+        </div>
+        <div class="member">
+            <div class="member-name">李帝努</div>
+            <img src="李帝努.jpg" alt="李帝努">
+        </div>
+        <div class="member">
+            <div class="member-name">朴智晟</div>
+            <img src="朴智晟.jpg" alt="朴智晟">
+        </div>
+        <div class="member">
+            <div class="member-name">钟辰乐</div>
+            <img src="钟辰乐.jpg" alt="钟辰乐">
+        </div>
+        <div class="member">
+            <div class="member-name">李楷灿</div>
+            <img src="李楷灿.jpg" alt="李楷灿">
+        </div>
     </section>
     
     <section id="songs">
         <h2>歌曲推荐</h2>
         <p>以下是NCT的<b>热门歌曲</b>：</p>
-        <ol>
-            <li>歌曲一<sup>1</sup></li>
-            <li>歌曲二<sup>2</sup></li>
-            <li>歌曲三<abbr title="第三首">3</abbr></li>
-        </ol>
+        <a href="#" class="song" onclick="playSong('https://i.y.qq.com/v8/playsong.html?songid=315284258#webchat_redirect')">《八音盒 (Life Is Still Going On) (오르골)》</a><br>
     </section>
     
     <footer>
         <p>版权所有 &copy; 2024 NCT粉丝聚集地</p>
     </footer>
+
+    <script>
+        function playSong(songUrl) {
+            window.open(songUrl, '_blank');
+        }
+    </script>
 </body>
 </html>

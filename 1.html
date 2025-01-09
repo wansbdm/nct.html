@@ -127,6 +127,36 @@
             border-bottom: 1px dotted #000;
             cursor: help;
         }
+        #wordcloud {
+            width: 100%;
+            height: auto; /* 根据内容自动调整高度 */
+            background-color: rgba(255, 255, 255, 0.1); /* 背景透明度 */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        #wordcloud img {
+            max-width: 100%; /* 图片最大宽度为容器宽度 */
+            height: auto; /* 高度自动调整 */
+            display: block; /* 块级元素，独占一行 */
+            margin: 20px auto; /* 上下外边距为20px，左右外边距自动，居中显示 */
+        }
+        .snowflake {
+            color: white;
+            font-size: 2em;
+            position: absolute;
+            animation: snow 10s linear infinite;
+        }
+        @keyframes snow {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
     </style>
 </head>
 <body>
@@ -204,6 +234,15 @@
         </div>
         <!-- 更多评论 -->
     </section>
+    <section id="wordcloud">
+        <h2>词云图</h2>
+        <p>当我们关注NCT Dream的时候，我们在讨论什么？</p>
+        <p>在NCT Dream的粉丝群体中，大家热衷于讨论各种话题。首先，成员们的音乐作品自然是焦点，无论是新专辑的发布，还是热门歌曲的演绎，都会引发热烈的讨论和分享。粉丝们会分析歌曲的风格、旋律、歌词含义，以及成员们在音乐上的表现和进步。</p>
+        <p>其次，成员们的舞台表现也是大家关注的重点。NCT Dream以其精彩的舞蹈和舞台魅力著称，粉丝们会讨论他们在各种演出中的表现，分享舞台照片和视频，以及对舞蹈动作的模仿和学习。此外，成员们的个人魅力和互动也是热门话题，粉丝们会关注他们的日常动态、社交媒体更新，以及在综艺节目和活动中的表现，分享有趣的瞬间和暖心的故事。</p>
+        <p>当然，粉丝们还会讨论与NCT Dream相关的周边产品，如专辑购买、周边商品收藏等，分享购买经验和收藏心得。同时，粉丝们也会关注NCT Dream的未来发展，期待他们推出更多优秀的作品，取得更大的成就。</p>
+        <img src="词云图.png" alt="词云图">
+    </section>
+    
     <footer>
         <p>版权所有 <sup>&copy;</sup> 2024 NCT粉丝聚集地</p>
     </footer>
